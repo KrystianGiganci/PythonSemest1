@@ -6,6 +6,7 @@ def prostokat(a: float, b: int):
     print(f'Pole prostokąta o wymiarach {a}x{b} wynosi {pole}')
     return pole
 
+
 prostokat(a=5, b=4)
 
 
