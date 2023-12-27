@@ -1,10 +1,21 @@
 import math
 
 
-def prostokat(a, b):
+def prostokat(a: float, b: int):
     pole = a * b
     print(f'Pole prostokąta o wymiarach {a}x{b} wynosi {pole}')
     return pole
+
+prostokat(a=5, b=4)
+
+
+
+
+
+
+
+
+
 
 
 # print(pole)
@@ -19,7 +30,7 @@ def kolo(r, pi=3.14):
 
 
 prostokat(1, 10)
-prostokat(80, 20)
+prostokat(a=80, b=20)
 
 kolo(4, math.pi)
 print(math.pi)
