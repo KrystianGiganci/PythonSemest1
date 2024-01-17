@@ -28,6 +28,9 @@ Następnie utwórz zmienną x i użyj konwersji z typu str na typ int,
 aby zmienna x przechowywała to co napis_liczba, ale jako typ liczby całkowitej.
 """
 
+napis_liczba = "290"
+x = int(napis_liczba)
+
 
 """
 ZADANIE 3.
@@ -45,6 +48,10 @@ Pole trójkąta o podstawie XX oraz wysokości XX wynosi XX.
 (W miejsce XX powinny pojawić się odpowiednie wartości liczbowe)
 """
 
+podstawa_trojkata = float(input("Podstawa: "))
+wysokosc_trojkata = float(input("Wysokość: "))
+pole_trojkata = podstawa_trojkata * wysokosc_trojkata / 2
+print(f"Pole trójkąta o podstawie {podstawa_trojkata} i wysokości {wysokosc_trojkata} wynosi {pole_trojkata}.")
 
 """
 ZADANIE 4.
@@ -54,7 +61,12 @@ komunikatów:
 - Nie jesteś jeszcze pełnoletni/a. Brakuje Ci XX lat do 18 roku życia.
 Zamiast XX powinna pojawić się odpowiednia wartość liczbowa.
 """
-
+wiek = int(input("Podaj swój wiek: "))
+if wiek >= 18:
+    print("Jesteś pełnoletni/a")
+else:
+    brakuje = 18 - wiek
+    print(f"Nie jesteś jeszcze pełnoletni/a. Brakuje Ci {brakuje} lat do 18 roku życia.")
 
 """
 ZADANIE 5.
