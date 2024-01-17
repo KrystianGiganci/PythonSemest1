@@ -98,3 +98,14 @@ Lecz jeśli wprowadzono niepoprawny numer miesiąc
 program powinien wyświetlić informację:
 "Wprowadzono niepoprawny numer miesiąca. Spróbuj ponownie"
 """
+
+cena_biletów = [0, 50, 50, 100, 100, 200, 200, 250, 200, 200, 100, 100, 50]
+
+miesiąc = int(input('Podaj numer miesiąca, w którym kupujesz bilet:'))
+liczba_biletów = int(input('Podaj liczbę biletów:'))
+
+if 1 <= miesiąc <= 12:
+    koszt = cena_biletów[miesiąc] * liczba_biletów
+    print(f'Cena biletów to {koszt} zł.')
+else:
+    print('Wprowadzono niepoprawny numer miesiąca. Spróbuj ponownie')

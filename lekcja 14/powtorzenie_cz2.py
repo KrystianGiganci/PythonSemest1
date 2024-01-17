@@ -1,13 +1,17 @@
+import random
+
 """
 ZADANIE 6.
 Napisz program, który zapyta użytkownika o liczbę, a następnie wypisze na
 ekranie tyle wyników z rzutu kością sześcienną.
 Rzut kością sześcienną to wynik z losowania liczby od 1 do 6 (włącznie).
 """
-
+liczba_rzutow = int(input("Liczba rzutów kością: "))
+for i in range(liczba_rzutow):          # [0, 1, 2,..., liczba_rzutów-1]
+    print(random.randint(1, 6))
 
 """
-ZADANIE 7.
+ZADANIE 7
 Napisz funkcję, która przyjmuje 2 argumenty:
 - tekst, typu str
 - n, typu int
