@@ -6,9 +6,9 @@ Napisz program, który zapyta użytkownika o liczbę, a następnie wypisze na
 ekranie tyle wyników z rzutu kością sześcienną.
 Rzut kością sześcienną to wynik z losowania liczby od 1 do 6 (włącznie).
 """
-liczba_rzutow = int(input("Liczba rzutów kością: "))
-for i in range(liczba_rzutow):          # [0, 1, 2,..., liczba_rzutów-1]
-    print(random.randint(1, 6))
+# liczba_rzutow = int(input("Liczba rzutów kością: "))
+# for i in range(liczba_rzutow):          # [0, 1, 2,..., liczba_rzutów-1]
+#     print(random.randint(1, 6))
 
 """
 ZADANIE 7
@@ -18,11 +18,24 @@ Napisz funkcję, która przyjmuje 2 argumenty:
 a zwraca nowy napis, który powstaje poprzez połączenie text n razy.
 """
 
-# def laczenie_slow(???) -> ???:
-# nowy_tekst = ""
-# ???
-# ???
-# return ???
+
+def laczenie_slow(tekst: str, n: int) -> str:
+    nowy_tekst = tekst * n
+    return nowy_tekst
+
+
+# Wykorzystaj kod ponizej do testowania:
+t1 = laczenie_slow("Slowo", 3)
+print(f"Czy 'SlowoSlowoSlowo' zgadza się z wynikiem funkcji? Wynik funkcji: '{t1}'")
+
+t2 = laczenie_slow("Aa", 5)
+print(f"Czy 'AaAaAaAaAa' zgadza się z wynikiem funkcji? Wynik funkcji: '{t2}'")
+
+t3 = laczenie_slow("Onomatopeja", 0)
+print(f"Czy '' zgadza się z wynikiem funkcji? Wynik funkcji: '{t3}'")
+
+t4 = laczenie_slow("Kilka spacji", 2)
+print(f"Czy 'Kilka spacjiKilka spacji' zgadza się z wynikiem funkcji? Wynik funkcji: '{t4}'")
 
 """
 ZADANIE 8.
