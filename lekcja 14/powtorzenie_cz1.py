@@ -13,6 +13,11 @@ Utwórz trzy zmienne, do których wpisz wartość 3 jako odpowiedni typ:
 - x_str - jako napis
 """
 
+x_int = 3
+x_float = 3.0
+x_str = "3"
+
+
 # Odkomentuj poniższe dwie linijki, aby sprawdzić czy zadanie zostało zrobione prawidłowo.
 # wynik = type(x_int) == int and type(x_float) == float and type(x_str) == str
 # print("Brawo! Zadanie zaliczone!") if wynik else print("Coś nie zadziałało, spróbuj ponownie")
