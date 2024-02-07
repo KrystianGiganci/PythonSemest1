@@ -4,13 +4,14 @@ dwa = ["2", 'dwa']
 
 plus = ["+", "dodaj", "plus", 'dodać', 'dodac']
 
-baza = [zero, jeden, plus]
+baza = [zero, jeden, dwa, plus]
 
 
 def przetlumacz(slowo):
-    wynik = ''
-    # TODO
-    return wynik
+    for symbol in baza:
+        for slowo_w_symbolu in symbol:
+            if slowo == slowo_w_symbolu:
+                return symbol[0]
 
 
 tekst = input("podaj tekst: ")  # wczytanie tekstu od użytkownika
